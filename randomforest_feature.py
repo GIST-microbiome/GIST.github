@@ -27,14 +27,14 @@ filtered_csv_df = csv_df[csv_df[csv_df.columns[0]].isin(important_genes)]
 filtered_csv_df.to_csv(output_file_path, index=False)
 
 # read the data
-gene_features_df = pd.read_csv('micro_gene_sample.csv')  # 假设基因特征表是CSV文件
+gene_features_df = pd.read_csv('micro_gene_sample.csv')  
 other_features_df = pd.read_csv('Final_patient_info.csv', encoding='ISO-8859-1', error_bad_lines=False)
 
 # transpose the gene_features_df
 gene_features_df = gene_features_df.set_index('Unnamed: 0').T
 
 # extract the time and group from other_features_df
-time_group_df = other_features_df[['Specimen_number', 'Time', 'group', 'Batch']]  # 假设样本名列名为 'sample_name'
+time_group_df = other_features_df[['Specimen_number', 'Time', 'group', 'Batch']]  
 
 # merge the gene_features_df and time_group_df
 merged_df = pd.merge(gene_features_df, time_group_df, left_index=True, right_on='Specimen_number')
@@ -53,8 +53,8 @@ df_cox = df.drop(columns=['group', 'Specimen_number'])
 
 # save df
 df.to_csv('df_r.csv', index=False)
-X = df.drop(columns=['Specimen_number', 'Time', 'group', 'LM_Occurred'])  # 自变量，删除样本名和时间列
-y = df['LM_Occurred']  # 因变量
+X = df.drop(columns=['Specimen_number', 'Time', 'group', 'LM_Occurred']) 
+y = df['LM_Occurred']  
 
 def randomforest_kfold(X, y, n_splits, n_estimators, random_state):
     cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=random_state)
@@ -166,7 +166,7 @@ def randomforest_kfold_split(df):
 
     dfs = {}
 
-    # 拆分数据集
+    
     dfs['df_0'] = df
     dfs['df_1'] = df[df['Batch'] == 'Union74']
     dfs['df_2'] = df[df['Batch'] == 'Union34']
@@ -187,11 +187,11 @@ def randomforest_kfold_split(df):
         processed_line = tuple(int(x) for x in line.strip().split(','))
         hyperparameters.append(processed_line)
 
-    colors = [['blue', 'green', 'red'], ['yellow', 'purple', 'orange']]  # 不同数据集的颜色
+    colors = [['blue', 'green', 'red'], ['yellow', 'purple', 'orange']]  
     legend = [['Overall Training Dataset ROC Curve', 'Cohort 1 - Training Dataset ROC Curve',
                'Cohort 2 - Training Dataset ROC Curve'],
               ['Overall Testing Dataset ROC Curve', 'Cohort 1 - Testing Dataset ROC Curve',
-               'Cohort 2 - Testing Dataset ROC Curve']]  # 不同数据集的图例
+               'Cohort 2 - Testing Dataset ROC Curve']] 
 
     for i in range(3):
         df_i = dfs[f'df_{i}']
@@ -303,9 +303,9 @@ def drug_resist(df):
         hyperparameters.append(processed_line)
 
 
-    colors = [['blue', 'green', 'red'], ['yellow', 'purple', 'orange']]  # 不同数据集的颜色
+    colors = [['blue', 'green', 'red'], ['yellow', 'purple', 'orange']]  
     legend = [['AI group Training Dataset ROC Curve', 'Non-AI group Training Dataset ROC Curve'],
-              ['AI group Testing Dataset ROC Curve', 'Non-AI group Testing Dataset ROC Curve']]  # 不同数据集的图例
+              ['AI group Testing Dataset ROC Curve', 'Non-AI group Testing Dataset ROC Curve']]  
 
     for i in range(2):
         df_i = dfs[f'df_{i}']
