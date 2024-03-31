@@ -17,6 +17,4 @@ Code used in Intratumoral Microbiome Predicts Liver Metastasis and Informs Effec
   Of course you need to install all dependent R packages.
 
   All machine learning related images in the paper will be reproduced.
-
-
-[Graphical Abstract.pdf](https://github.com/GIST-microbiome/GIST.github/files/14817480/Graphical.Abstract.pdf)
+![image](https://github.com/GIST-microbiome/GIST.github/assets/143196047/43130b82-62bf-414a-b295-90ee1e3ce1d8)
