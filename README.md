@@ -28,14 +28,13 @@ Code used in 'Intratumoral Shewanella algae promotes liver metastasis and dampen
 
  ## Mediation analysis between Risk stratifications and liver metastasis
 
- The script "mediation_effect.r" is the original code for the mediation analysis.We hypothesize that the only intermediate variable between risk and liver metastasis is the adjuvant imatinib.
+ The script "mediation_effect.r" is the original code for the mediation analysis.
+ 
+ We hypothesize that the only intermediate variable between risk and liver metastasis is the adjuvant imatinib.
+ 
  For 95% CI caculation, we utilized the Bias Corrected and Accelerated (BCa) Bootstrap resampling method.
 
- If you need more details please contact me via email:
- 
- yanzeli95@gmail.com;
- yanze.li@aalto.fi;
- D202081632@hust.edu.cn
+
  
  Our over all study design:
  
