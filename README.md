@@ -33,8 +33,8 @@ Code used in 'Intratumoral Shewanella algae promotes liver metastasis and dampen
 
  If you need more details please contact me via email:
  
- yanzeli95@gmail.com
- yanze.li@aalto.fi
+ yanzeli95@gmail.com;
+ yanze.li@aalto.fi;
  D202081632@hust.edu.cn
  
  Our over all study design:
