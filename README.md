@@ -5,7 +5,7 @@ Code used in 'Intratumoral Shewanella algae promotes liver metastasis and dampen
 
  ### The feature selection script
  
- ##The feature selection script related to the feature selection model is placed in the 'modeling.R script', which is dirven by the SIAMCAT (https://siamcat.embl.de/) package in R.
+ ## The feature selection script related to the feature selection model is placed in the 'modeling.R script', which is dirven by the SIAMCAT (https://siamcat.embl.de/) package in R.
  
   Including batch-correction protocol, feature selection model training and validation. 
   
@@ -22,7 +22,7 @@ Code used in 'Intratumoral Shewanella algae promotes liver metastasis and dampen
 
 ### The feature engineering method
 
-##The feature engineering method including Priority Score caculation and Time-dependent explanations of survival model
+## The feature engineering method including Priority Score caculation and Time-dependent explanations of survival model
 
  The script 'confident_interval_survshap.r' is the Time-dependent explanations of survival (SurvSHAP,https://github.com/MI2DataLab/survshap, https://doi.org/10.1016/j.knosys.2022.110234) model for high priority feature ranking.
 
