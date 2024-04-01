@@ -36,6 +36,6 @@ Code used in 'Intratumoral Shewanella algae promotes liver metastasis and dampen
 
 
  
- Our over all study design:
+ ## Over all study design in this project
  
 ![image](https://github.com/GIST-microbiome/GIST.github/assets/143196047/43130b82-62bf-414a-b295-90ee1e3ce1d8)
