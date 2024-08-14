@@ -1,5 +1,6 @@
 # GIST Intratumoral Microbiome Analysis
 Code used in 'Intratumoral Shewanella algae promotes liver metastasis and dampens adjuvant imatinib treatment in gastrointestinal stromal tumor'
+Pubished in Cancer Letters. DOI: 10.1016/j.canlet.2024.217149
  
  Contains feature selection and feature ranking models and agrithom code and Illumina 16s rRNA amplicon sequencing original microbiome read count matrix
 
