@@ -41,4 +41,4 @@ Pubished in Cancer Letters. DOI: 10.1016/j.canlet.2024.217149
  
  ## Over all study design in this project
  
-![image](https://github.com/GIST-microbiome/GIST.github/assets/143196047/43130b82-62bf-414a-b295-90ee1e3ce1d8)
+![image](https://github.com/user-attachments/assets/f25969ea-f243-4f8f-bc43-a2794914d15e)
